@@ -1,6 +1,9 @@
 # yfs bot
 This is a bot for gaining an unfair advantage in your yahoo fantasy football league.
 
+## summary
+This bot uses an embedded sql database (h2) with long polling/web sockets to queue messages via external messenger services. It can be deployed and run as a standalone jar file and only requires a few environment variables be set.
+
 ## setup
 * get you some JDK 1.8, and the most excellent leiningen package manager/build tool
 ```
