@@ -84,8 +84,6 @@
   "run the main loop"
   [& args]
   (while true
-   (do
-    ; (println @offset)
     (let [last-update-id (poll-for-and-process-updates)]
-      (when last-update-id (reset! offset (inc last-update-id)))))
+      (when last-update-id (reset! offset (inc last-update-id))))
     (Thread/sleep 800)))
